@@ -13,6 +13,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:image" content="https://boris-bagemihl-formacion.com/og-image.jpg">
+<meta property="og:url" content="https://boris-bagemihl-formacion.com/de.html">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127465;&#127466;</text></svg>">
 <link rel="alternate" hreflang="es" href="https://boris-bagemihl-formacion.com/">
 <style>
@@ -80,12 +82,14 @@ h2{font-size:1.6em}section{padding:50px 16px}}
 
 <nav>
 <div class="nav-inner">
-    <a href="de.html" class="logo">Boris Bagemihl <span>| Professionelles Deutsch</span></a>
+    <a href="/de.html" class="logo">Boris Bagemihl <span>| Professionelles Deutsch</span></a>
     <span class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">&#9776;</span>
     <ul>
         <li><a href="#ueber-mich">Über mich</a></li>
         <li><a href="#vorteile">Vorteile</a></li>
-        <li><a href="#vorteile">FUNDAE</a></li>
+        <li><a href="#fundae">FUNDAE</a></li>
+        <li><a href="#module">Module</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
         <li><a href="index.html" style="border:1px solid rgba(255,255,255,.4);padding:3px 10px;border-radius:4px;font-size:.85em">ES</a></li>
     </ul>
@@ -174,6 +178,130 @@ h2{font-size:1.6em}section{padding:50px 16px}}
 </div>
 </section>
 
+<section id="fundae">
+<div class="container">
+    <h2>Geförderte Weiterbildung <a href="https://www.fundae.es" target="_blank" style="color:var(--azul);text-decoration:none;">FUNDAE</a></h2>
+    <p class="section-sub">Ihr Unternehmen zahlt bereits monatlich für Weiterbildung. Wenn Sie es nicht nutzen, verfällt es.</p>
+    <div style="background:var(--blanco);border-radius:var(--radius);padding:36px;box-shadow:0 2px 12px rgba(0,0,0,.06);max-width:800px;margin:0 auto">
+        <h3 style="color:var(--azul);margin-bottom:16px;font-size:1.2em">Was ist FUNDAE</h3>
+        <p>Alle Unternehmen mit Arbeitnehmern im Régimen General zahlen monatlich für berufliche Weiterbildung. Dieses Geld wird zu einem <strong>jährlichen Guthaben</strong>, das für die Schulung der Mitarbeiter verwendet werden kann. Wird es nicht vor dem 31. Dezember genutzt, <strong>verfällt es</strong>. Mehr Informationen auf <a href="https://www.fundae.es" target="_blank" style="color:var(--azul-claro)">fundae.es</a>.</p>
+        <p style="font-size:.88em;color:#555;margin-top:8px"><strong>Wichtig:</strong> Unternehmen mit weniger als 50 Mitarbeitern können <strong>nicht genutztes Guthaben bis zu 2 Jahre ansammeln</strong>, wenn sie es vor dem 30. Juni bei FUNDAE beantragen (Art. 11 RD 694/2017).</p>
+
+        <h3 style="color:var(--azul);margin-bottom:16px;margin-top:24px;font-size:1.2em">Wie funktioniert es</h3>
+        <p>Das Unternehmen beauftragt die Schulung, diese wird während der Arbeitszeit in seinen Räumlichkeiten durchgeführt, und danach wird der Betrag <strong>über die Sozialversicherungsbeiträge</strong> des Folgemonats erstattet. Die erforderliche Kofinanzierung (0%–40% je nach Größe) <strong>wird automatisch durch die Gehaltskosten</strong> der Teilnehmer während der Schulungsstunden abgedeckt (Art. 16 RD 694/2017). <strong>Keine zusätzlichen Kosten für das Unternehmen.</strong></p>
+
+        <div style="background:var(--gris-fondo);border-radius:var(--radius);padding:20px 24px;margin:20px 0;border-left:4px solid var(--azul-claro)">
+            <p style="margin-bottom:12px"><strong>FUNDAE-Einsparungsrechner</strong></p>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px">
+                <label style="flex:1;min-width:120px">
+                    <span style="font-size:.85em;color:#666">Anzahl Mitarbeiter im Unternehmen</span><br>
+                    <input type="number" id="calc-empl-de" min="1" max="10000" value="8" style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;font-size:1em" onchange="calcularDE()" oninput="calcularDE()">
+                </label>
+                <label style="flex:1;min-width:120px">
+                    <span style="font-size:.85em;color:#666">Anzahl Kursteilnehmer</span><br>
+                    <input type="number" id="calc-part-de" min="1" max="100" value="4" style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;font-size:1em" onchange="calcularDE()" oninput="calcularDE()">
+                </label>
+                <label style="flex:1;min-width:120px">
+                    <span style="font-size:.85em;color:#666">Kursstunden</span><br>
+                    <select id="calc-horas-de" style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;font-size:1em;background:#fff" onchange="calcularDE()">
+                        <option value="4">4 Std. (Probesitzung)</option>
+                        <option value="8">8 Std. (1 Modul)</option>
+                        <option value="16">16 Std. (2 Module)</option>
+                        <option value="24">24 Std. (3 Module)</option>
+                        <option value="40">40 Std.</option>
+                        <option value="80">80 Std.</option>
+                        <option value="150">150 Std.</option>
+                    </select>
+                </label>
+                <input type="hidden" id="calc-modulo-de" value="13">
+            </div>
+            <div id="calc-resultado-de" style="background:#fff;border-radius:6px;padding:16px;border:1px solid #e0e0e0"></div>
+            <p style="font-size:.78em;color:#999;margin-top:10px">* Orientierungsberechnung. Der tatsächliche Betrag hängt von den Bedingungen Ihres Unternehmens ab.</p>
+            <p style="text-align:center;margin-top:12px">
+<a href="https://wa.me/34633212566?text=Hallo%20Boris%2C%20ich%20interessiere%20mich%20f%C3%BCr%20ein%20Angebot%20f%C3%BCr%20Deutschkurse%20f%C3%BCr%20mein%20Unternehmen." style="display:inline-block;background:#25d366;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.9em;margin:4px">Angebot per WhatsApp anfordern</a>
+<a href="guia-fundae-coste-cero.pdf" style="display:inline-block;background:var(--azul-claro);color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.9em;margin:4px">Leitfaden (PDF)</a>
+</p>
+        </div>
+
+        <div style="background:#f0f5e9;border-radius:var(--radius);padding:18px 24px;margin:20px 0;border-left:4px solid var(--verde)">
+            <p style="font-weight:700;color:var(--azul);margin-bottom:8px">Der Kurs beinhaltet:</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:.9em">
+                <span style="background:#fff;padding:4px 12px;border-radius:16px;border:1px solid #c8e6c9">Präsenzunterricht im Unternehmen</span>
+                <span style="background:#fff;padding:4px 12px;border-radius:16px;border:1px solid #c8e6c9">Deutscher Muttersprachler</span>
+                <span style="background:#fff;padding:4px 12px;border-radius:16px;border:1px solid #c8e6c9">Eigenes Lehrmaterial</span>
+                <span style="background:#fff;padding:4px 12px;border-radius:16px;border:1px solid #c8e6c9">Laminierter Taschenführer, personalisiert</span>
+                <span style="background:#fff;padding:4px 12px;border-radius:16px;border:1px solid #c8e6c9">Dreisprachiges Fachvokabular</span>
+                <span style="background:#fff;padding:4px 12px;border-radius:16px;border:1px solid #c8e6c9">Einstufungs- und Abschlusstest</span>
+                <span style="background:#fff;padding:4px 12px;border-radius:16px;border:1px solid #c8e6c9">Teilnahmezertifikat</span>
+                <span style="background:#fff;padding:4px 12px;border-radius:16px;border:1px solid #c8e6c9">Komplette FUNDAE-Verwaltung</span>
+            </div>
+        </div>
+
+        <h3 style="color:var(--azul);margin-bottom:16px;font-size:1.2em">Ich kümmere mich um alles</h3>
+        <p>FUNDAE-Kommunikation, Dokumentation, Anwesenheitskontrolle, Abschlussbericht, Verwaltung der Förderung. Das Unternehmen entscheidet nur, wer teilnimmt und zu welcher Uhrzeit.</p>
+        <p style="margin-top:14px;text-align:center">
+<a href="guia-plazos-fundae.pdf" style="display:inline-block;background:var(--azul-claro);color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.9em;margin:4px">Fristenleitfaden (PDF)</a>
+</p>
+    </div>
+</div>
+</section>
+
+<section id="module">
+<div class="container">
+    <h2>Verfügbare Module</h2>
+    <p class="section-sub">Branchenspezifische Schulung.<br>Jedes Modul: 8 Stunden (4 Sitzungen à 2 Std.). Dauer anpassbar.</p>
+    <div class="ventajas-grid" style="grid-template-columns:repeat(3,1fr);gap:20px">
+        <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Hotelrezeption</h3><p style="font-size:.88em;color:#666">Check-in/out, Reservierungen, Beschwerden, Wegbeschreibungen.</p></div>
+        <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Restaurant und Bar</h3><p style="font-size:.88em;color:#666">Speisekarte, Allergene, Empfehlungen, Beschwerden, Bezahlung.</p></div>
+        <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Spa und Wellness</h3><p style="font-size:.88em;color:#666">Behandlungen, Reservierungen, Anweisungen, Produkte.</p></div>
+        <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Apotheke</h3><p style="font-size:.88em;color:#666">Symptome, Medikamente, Dosierung, Versicherungen.</p></div>
+        <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Immobilien</h3><p style="font-size:.88em;color:#666">Besichtigungen, Verträge, Beschreibungen, Verhandlung.</p></div>
+        <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Wassersport</h3><p style="font-size:.88em;color:#666">Sicherheit, Ausrüstung, Anweisungen, Bedingungen.</p></div>
+        <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Handel und Geschäfte</h3><p style="font-size:.88em;color:#666">Kundenservice, Größen, Preise, Retouren, Versand.</p></div>
+        <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Ferienvermietung</h3><p style="font-size:.88em;color:#666">Ankunft, Regeln, Vorfälle, Check-out, Bewertungen.</p></div>
+        <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Gesundheitswesen</h3><p style="font-size:.88em;color:#666">Seniorenheime, Kliniken, Physiotherapie. Kommunikation mit deutschen Patienten.</p></div>
+    </div>
+    <p style="text-align:center;margin-top:28px;color:#888;font-size:.92em">+22 weitere Module verfügbar. Ich entwerfe maßgeschneiderte Module nach den Bedürfnissen jedes Unternehmens.</p>
+</div>
+</section>
+
+<section id="faq">
+<div class="container">
+    <h2>Häufige Fragen</h2>
+    <p class="section-sub">Antworten auf die häufigsten Fragen</p>
+    <div style="max-width:800px;margin:0 auto">
+        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+            <summary style="font-weight:600;color:var(--azul)">Welches Deutschniveau brauchen meine Mitarbeiter?</summary>
+            <p style="margin-top:10px;font-size:.95em">Keines. Die Kurse werden an das Niveau jeder Gruppe angepasst, von absolutem Anfänger (A1) bis Fortgeschritten (C1). Ich führe einen Einstufungstest durch.</p>
+        </details>
+        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+            <summary style="font-weight:600;color:var(--azul)">Wie viele Teilnehmer kann eine Gruppe haben?</summary>
+            <p style="margin-top:10px;font-size:.95em">Ideal sind 4 bis 10 Teilnehmer. Bei weniger als 4 ist es möglich, aber die FUNDAE-Förderung deckt einen geringeren Anteil der Kosten. Bei mehr als 10 kann in zwei Gruppen aufgeteilt werden.</p>
+        </details>
+        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+            <summary style="font-weight:600;color:var(--azul)">Findet die Schulung während der Arbeitszeit statt?</summary>
+            <p style="margin-top:10px;font-size:.95em">Ja, FUNDAE-geförderte Schulungen finden innerhalb der Arbeitszeit statt. Der Zeitplan wird mit dem Unternehmen vereinbart, um die Auswirkungen auf den Betrieb zu minimieren.</p>
+        </details>
+        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+            <summary style="font-weight:600;color:var(--azul)">Welche Unterlagen braucht das Unternehmen?</summary>
+            <p style="margin-top:10px;font-size:.95em">Nur die Basisdaten der Teilnehmer (Name, Ausweis, Berufskategorie, Beitragsgruppe). Ich kümmere mich um die gesamte FUNDAE-Dokumentation.</p>
+        </details>
+        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+            <summary style="font-weight:600;color:var(--azul)">Hat mein Unternehmen FUNDAE-Guthaben?</summary>
+            <p style="margin-top:10px;font-size:.95em">Ja, alle Unternehmen, die für berufliche Weiterbildung einzahlen, haben Guthaben. Der Betrag hängt von der Anzahl der Mitarbeiter ab. Nutzen Sie den Rechner auf dieser Seite oder fragen Sie mich.</p>
+        </details>
+        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+            <summary style="font-weight:600;color:var(--azul)">Kann ich eine Probesitzung machen?</summary>
+            <p style="margin-top:10px;font-size:.95em">Ja. Ich biete ein 4-Stunden-Modul (2 Sitzungen) als Probesitzung an. So kann das Unternehmen die Schulung bewerten, bevor es sich für einen längeren Kurs entscheidet.</p>
+        </details>
+        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+            <summary style="font-weight:600;color:var(--azul)">Unterrichten Sie auch Englisch?</summary>
+            <p style="margin-top:10px;font-size:.95em">Ja, ich biete auch professionelle Englischkurse mit dem gleichen förderbaren System an. Fragen Sie nach Verfügbarkeit.</p>
+        </details>
+    </div>
+</div>
+</section>
+
 <section id="kontakt">
 <div class="container">
     <h2>Kontakt</h2>
@@ -206,6 +334,59 @@ h2{font-size:1.6em}section{padding:50px 16px}}
     </div>
 </div>
 </section>
+
+<script>
+function calcularDE(){
+    var empl=parseInt(document.getElementById('calc-empl-de').value)||1;
+    var part=parseInt(document.getElementById('calc-part-de').value)||1;
+    var horas=parseInt(document.getElementById('calc-horas-de').value)||8;
+    var modEco=13;
+    if(part>empl)part=empl;
+    var base=1300;var cuotaFP=0.007*base*empl*12;
+    var cof,pctCredito,catNombre;
+    if(empl<=5){cof=0;pctCredito=1;catNombre='1-5 Mitarbeiter (KOF 0%)';}
+    else if(empl<=9){cof=0.05;pctCredito=1;catNombre='6-9 Mitarbeiter (KOF 5%)';}
+    else if(empl<=49){cof=0.10;pctCredito=1;catNombre='10-49 Mitarbeiter (KOF 10%)';}
+    else if(empl<=249){cof=0.20;pctCredito=0.75;catNombre='50-249 Mitarbeiter (KOF 20%)';}
+    else{cof=0.40;pctCredito=0.50;catNombre='250+ Mitarbeiter (KOF 40%)';}
+    var credito=Math.round(cuotaFP*pctCredito);
+    var precioHora=125;var precioTotal=precioHora*horas;
+    var maxBonificable=modEco*horas*part;
+    var bonificable=Math.min(maxBonificable,credito);
+    var cofEuros=Math.round(bonificable*cof);
+    var empresaPaga=precioTotal-bonificable+cofEuros;
+    if(empresaPaga<0)empresaPaga=0;
+    var ahorro=Math.round((1-empresaPaga/precioTotal)*100);
+    var horasMaxCredito=Math.floor(credito/(modEco*part));
+    var costeSalarial=Math.round(part*horas*12);
+    var cofNecesaria=Math.round(precioTotal*cof);
+    var cofCubierta=costeSalarial>=cofNecesaria;
+    var r='<div style="display:flex;gap:16px;flex-wrap:wrap;text-align:center">';
+    r+='<div style="flex:1;min-width:100px"><div style="font-size:.78em;color:#888">FUNDAE-Guthaben/Jahr</div><div style="font-size:1.3em;font-weight:700;color:#1a3a5c">'+credito.toLocaleString('de')+' &euro;</div></div>';
+    r+='<div style="flex:1;min-width:100px"><div style="font-size:.78em;color:#888">Kurskosten</div><div style="font-size:1.3em;font-weight:700;color:#555">'+precioTotal.toLocaleString('de')+' &euro;</div></div>';
+    r+='<div style="flex:1;min-width:100px"><div style="font-size:.78em;color:#888">FUNDAE fördert</div><div style="font-size:1.3em;font-weight:700;color:#2e7d32">'+bonificable.toLocaleString('de')+' &euro;</div></div>';
+    r+='<div style="flex:1;min-width:100px"><div style="font-size:.78em;color:#888">Unternehmen zahlt</div><div style="font-size:1.3em;font-weight:700;color:'+(empresaPaga<=0?'#2e7d32':'#c62828')+'">'+empresaPaga.toLocaleString('de')+' &euro;</div></div>';
+    r+='</div>';
+    r+='<div style="margin-top:12px;font-size:.85em;color:#555;text-align:center">';
+    r+='<span style="background:#e3edf7;padding:2px 10px;border-radius:4px;font-weight:700;color:#1a3a5c">'+catNombre+'</span> &middot; Ersparnis: <strong>'+ahorro+'%</strong> &middot; Stunden gedeckt: <strong>'+horasMaxCredito+'h</strong>';
+    r+='</div>';
+    if(cof>0){
+        r+='<div style="margin-top:14px;background:#e8f5e9;border-radius:6px;padding:12px 16px;font-size:.88em">';
+        r+='<strong style="color:#2e7d32">Kofinanzierung (KOF '+Math.round(cof*100)+'%)</strong><br>';
+        r+='KOF erforderlich: '+cofNecesaria.toLocaleString('de')+' &euro; &middot; ';
+        r+='Gehaltskosten während der Schulung: <strong>'+costeSalarial.toLocaleString('de')+' &euro;</strong><br>';
+        if(cofCubierta){r+='<span style="color:#2e7d32;font-weight:700">&#10003; Die KOF wird durch die Gehälter der Teilnehmer während der Schulung abgedeckt (Art. 16 RD 694/2017). Keine zusätzlichen Kosten.</span>';}
+        else{r+='<span style="color:#e65100">Offene KOF: '+(cofNecesaria-costeSalarial).toLocaleString('de')+' &euro;</span>';}
+        r+='</div>';
+    }else{
+        r+='<div style="margin-top:14px;background:#e8f5e9;border-radius:6px;padding:12px 16px;font-size:.88em">';
+        r+='<span style="color:#2e7d32;font-weight:700">&#10003; Unternehmen mit 1-5 Mitarbeitern: keine Kofinanzierung erforderlich. 100% Förderung.</span>';
+        r+='</div>';
+    }
+    document.getElementById('calc-resultado-de').innerHTML=r;
+}
+calcularDE();
+</script>
 
 <footer>
     <p>Boris Bagemihl &middot; Bei FUNDAE registrierte Einrichtung &middot; Teneriffa, Kanaren</p>
