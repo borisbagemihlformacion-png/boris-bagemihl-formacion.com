@@ -105,7 +105,7 @@ h2{font-size:1.6em}section{padding:50px 16px}}
         <span class="badge">FUNDAE-Förderung</span>
         <span class="badge">Maßgeschneiderte Kurse</span>
     </div>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8wuh6IW4XQ4RnAdhJD8XWS6kMSg1WYo4hMPa9o0TKxTNVOQ/viewform" class="btn" target="_blank">Informationen anfordern</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7DYu520B5X5SmaboLQmlQ2gLEm3yK7HS2f5eCDjcTuh0CYg/viewform" class="btn" target="_blank">Informationen anfordern</a>
     <a href="#kontakt" class="btn btn-secundario">Kontakt</a>
 </section>
 
@@ -208,8 +208,11 @@ h2{font-size:1.6em}section{padding:50px 16px}}
                         <option value="8">8 Std. (1 Modul)</option>
                         <option value="16">16 Std. (2 Module)</option>
                         <option value="24">24 Std. (3 Module)</option>
-                        <option value="40">40 Std.</option>
+                        <option value="32">32 Std. (4 Module)</option>
+                        <option value="40">40 Std. (5 Module)</option>
+                        <option value="60">60 Std.</option>
                         <option value="80">80 Std.</option>
+                        <option value="100">100 Std.</option>
                         <option value="150">150 Std.</option>
                     </select>
                 </label>
@@ -261,7 +264,40 @@ h2{font-size:1.6em}section{padding:50px 16px}}
         <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Ferienvermietung</h3><p style="font-size:.88em;color:#666">Ankunft, Regeln, Vorfälle, Check-out, Bewertungen.</p></div>
         <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Gesundheitswesen</h3><p style="font-size:.88em;color:#666">Seniorenheime, Kliniken, Physiotherapie. Kommunikation mit deutschen Patienten.</p></div>
     </div>
-    <p style="text-align:center;margin-top:28px;color:#888;font-size:.92em">+22 weitere Module verfügbar. Ich entwerfe maßgeschneiderte Module nach den Bedürfnissen jedes Unternehmens.</p>
+    <div style="text-align:center;margin-top:28px">
+        <p style="color:#888;font-size:.92em;margin-bottom:12px">Ich entwerfe maßgeschneiderte Module nach den Bedürfnissen jedes Unternehmens.</p>
+        <button onclick="document.getElementById('module-extra').style.display=document.getElementById('module-extra').style.display==='none'?'block':'none'" style="background:var(--azul-claro);color:#fff;border:none;padding:10px 24px;border-radius:6px;font-size:.95em;font-weight:600;cursor:pointer">+22 weitere Module verfügbar</button>
+    </div>
+    <div id="module-extra" style="display:none;margin-top:24px">
+        <div class="ventajas-grid" style="grid-template-columns:repeat(3,1fr);gap:20px">
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Animation und Aktivitäten</h3><p style="font-size:.88em;color:#666">Programme, Anweisungen, Beschwerden, Wetter, Verabschiedung.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Housekeeping</h3><p style="font-size:.88em;color:#666">Kommunikation mit Gästen, Produkte, Vorfälle, Zeiten.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Küche</h3><p style="font-size:.88em;color:#666">Allergene, Zutaten, Sondergerichte, Lieferanten.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Concierge</h3><p style="font-size:.88em;color:#666">Wegbeschreibungen, externe Reservierungen, Transport, Empfehlungen.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Unabhängiges Restaurant</h3><p style="font-size:.88em;color:#666">Speisekarte, Allergene, Empfehlungen, Bezahlung, Bewertungen.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Bäckerei / Café</h3><p style="font-size:.88em;color:#666">Produkte, Zutaten, Bestellungen, Thekenbedienung.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Steuerberatung</h3><p style="font-size:.88em;color:#666">Steuerfragen, Unterlagen, Termine, Fachterminologie.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Bekleidungsgeschäft</h3><p style="font-size:.88em;color:#666">Größen, Farben, Materialien, Umkleiden, Retouren.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Supermarkt</h3><p style="font-size:.88em;color:#666">Abteilungen, Produkte, Angebote, Kasse, Kundenservice.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Meeresausflüge</h3><p style="font-size:.88em;color:#666">Sicherheit, Meeresfauna, Routen, Wetterbedingungen.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Tauchen</h3><p style="font-size:.88em;color:#666">Ausrüstung, Sicherheit, Briefing, Fauna, Zertifizierungen.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Surf / Kite / Windsurf</h3><p style="font-size:.88em;color:#666">Bedingungen, Ausrüstung, Sicherheit, Levels, Reservierungen.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Autovermietung</h3><p style="font-size:.88em;color:#666">Fahrzeuge, Versicherungen, Unterlagen, Vorfälle, Rückgabe.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Fahrrad- / Motorradverleih</h3><p style="font-size:.88em;color:#666">Modelle, Routen, Versicherung, Fahrzeugzustand, Regeln.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Autowerkstatt</h3><p style="font-size:.88em;color:#666">Pannen, Kostenvoranschläge, Fristen, Ersatzteile, Übergabe.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Arztpraxis / Klinik</h3><p style="font-size:.88em;color:#666">Symptome, Diagnose, Behandlung, Rezepte, Versicherungen.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Physiotherapie</h3><p style="font-size:.88em;color:#666">Beschwerden, Behandlungen, Übungen, Termine, Nachsorge.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Tierarztpraxis</h3><p style="font-size:.88em;color:#666">Symptome, Impfungen, Ernährung, Notfälle, Rassen.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Optik</h3><p style="font-size:.88em;color:#666">Sehstärke, Fassungen, Kontaktlinsen, Versicherungen, Abholung.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Zahnarztpraxis</h3><p style="font-size:.88em;color:#666">Behandlungen, Kostenvoranschläge, Schmerzen, Versicherungen, Termine.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Friseur / Kosmetik</h3><p style="font-size:.88em;color:#666">Dienstleistungen, Produkte, Termine, Vorlieben, Bezahlung.</p></div>
+            <div style="background:var(--blanco);border-radius:var(--radius);padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-top:3px solid var(--azul-claro)"><h3 style="color:var(--azul);font-size:1em;margin-bottom:8px">Fitnessstudio</h3><p style="font-size:.88em;color:#666">Abos, Zeiten, Geräte, Kurse, Hausordnung.</p></div>
+        </div>
+        <div style="text-align:center;margin-top:24px">
+            <p style="color:#666;margin-bottom:12px">Branche nicht gefunden? Ich entwerfe maßgeschneiderte Module für jede berufliche Tätigkeit.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7DYu520B5X5SmaboLQmlQ2gLEm3yK7HS2f5eCDjcTuh0CYg/viewform" class="btn" target="_blank">Informationen anfordern</a>
+        </div>
+    </div>
 </div>
 </section>
 
@@ -293,6 +329,10 @@ h2{font-size:1.6em}section{padding:50px 16px}}
         <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
             <summary style="font-weight:600;color:var(--azul)">Kann ich eine Probesitzung machen?</summary>
             <p style="margin-top:10px;font-size:.95em">Ja. Ich biete ein 4-Stunden-Modul (2 Sitzungen) als Probesitzung an. So kann das Unternehmen die Schulung bewerten, bevor es sich für einen längeren Kurs entscheidet.</p>
+        </details>
+        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+            <summary style="font-weight:600;color:var(--azul)">Was passiert, wenn ein Mitarbeiter fehlt?</summary>
+            <p style="margin-top:10px;font-size:.95em">Die Abwesenheit wird in der Anwesenheitskontrolle erfasst. FUNDAE verlangt mindestens 75&nbsp;% Anwesenheit, damit der Teilnehmer als abgeschlossen zählt. Entschuldigte Fehltage werden dokumentiert.</p>
         </details>
         <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
             <summary style="font-weight:600;color:var(--azul)">Unterrichten Sie auch Englisch?</summary>
@@ -328,7 +368,7 @@ h2{font-size:1.6em}section{padding:50px 16px}}
         <div class="contacto-cta">
             <h3>Informationen anfordern</h3>
             <p>Füllen Sie das Formular mit den Daten Ihres Unternehmens aus und ich sende Ihnen ein individuelles Angebot mit der Berechnung Ihrer FUNDAE-Förderung.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8wuh6IW4XQ4RnAdhJD8XWS6kMSg1WYo4hMPa9o0TKxTNVOQ/viewform" class="btn" target="_blank" style="background:var(--azul);color:white;">Formular ausfüllen</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7DYu520B5X5SmaboLQmlQ2gLEm3yK7HS2f5eCDjcTuh0CYg/viewform" class="btn" target="_blank" style="background:var(--azul);color:white;">Formular ausfüllen</a>
             <p style="margin-top:16px;font-size:.85em;color:#999;">Antwort innerhalb von 24 Stunden</p>
         </div>
     </div>
