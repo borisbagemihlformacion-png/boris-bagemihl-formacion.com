@@ -85,31 +85,49 @@
   ul.value { margin: 1mm 0 0 4.5mm; }
   ul.value li { margin: 1.2mm 0; font-size: 10.5pt; }
   ul.value strong { color: #2c3e50; }
-  table.hits {
+  .exp-lead {
+    font-size: 10.5pt;
+    margin: 1mm 0 2mm;
+  }
+  .exp-lead strong { color: #2c3e50; }
+  table.fmts {
     width: 100%;
     border-collapse: collapse;
-    font-size: 10pt;
-    margin-top: 1mm;
+    font-size: 9.5pt;
+    margin-bottom: 2mm;
   }
-  table.hits th {
-    text-align: left;
-    font-size: 8.5pt;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    color: #e67e22;
-    padding: 1mm 0;
-    border-bottom: 1px solid #dde3ea;
-  }
-  table.hits td {
-    padding: 1.4mm 2mm 1.4mm 0;
+  table.fmts td {
+    padding: 0.8mm 2mm 0.8mm 0;
     border-bottom: 1px solid #eef1f4;
-    vertical-align: top;
+    vertical-align: baseline;
   }
-  table.hits td.yr {
-    width: 18mm;
-    color: #e67e22;
+  table.fmts td.n {
+    width: 11mm;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 12pt;
     font-weight: 700;
-    white-space: nowrap;
+    color: #e67e22;
+    text-align: right;
+    padding-right: 2.5mm;
+  }
+  table.fmts td.lbl { color: #2c3e50; }
+  .fmts-wrap {
+    display: flex;
+    gap: 4mm;
+  }
+  .fmts-wrap table { width: 50%; }
+  .subh {
+    font-size: 9pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #e67e22;
+    margin: 2mm 0 1mm;
+  }
+  .academies {
+    font-size: 9.5pt;
+    color: #444;
+    line-height: 1.4;
   }
   .akk {
     font-size: 10pt;
@@ -148,8 +166,8 @@
 <div class="signals">
   <div class="signal"><div class="n">Nativ</div><div class="l">DE · auf Teneriffa aufgewachsen</div></div>
   <div class="signal"><div class="n">+20</div><div class="l">Jahre Unterricht</div></div>
+  <div class="signal"><div class="n">+48</div><div class="l">Deutschkurse</div></div>
   <div class="signal"><div class="n">+6.300</div><div class="l">Unterrichtsstunden</div></div>
-  <div class="signal"><div class="n">A1–C1</div><div class="l">SCE-Akkreditierung</div></div>
 </div>
 
 <p class="pitch">Praxisnahes Deutsch in-company für Hotels, Freizeit, Gastronomie und deutschsprachigen Publikumsverkehr. Ich unterrichte und übernehme die FUNDAE-Abwicklung: ein Ansprechpartner.</p>
@@ -163,16 +181,23 @@
   <li><strong>FUNDAE inklusive</strong> — Anmeldung, Dokumentation, Begleitung und Abschluss.</li>
 </ul>
 
-<h2>Lehrerfahrung (Auswahl)</h2>
-<table class="hits">
-  <tr><th></th><th>Meilenstein</th></tr>
-  <tr><td class="yr">2026</td><td>Deutsch A2–B1 — Aforeca (Puerto de la Cruz / Buenavista)</td></tr>
-  <tr><td class="yr">2025</td><td>Deutsch C1 — Viernes Formación · A1–A2 — TecnoInte / Formacionline</td></tr>
-  <tr><td class="yr">2023–24</td><td>Deutsch A1–A2 und Housekeeping — Focan (Los Cristianos)</td></tr>
-  <tr><td class="yr">2016–17</td><td>Deutsch Publikumsverkehr (200 Std.) — AudioStudio</td></tr>
-  <tr><td class="yr">2014–15</td><td>Deutsch Hotellerie (~500 Std.) — AsHotel · Rezeption — Hotel Las Siesta</td></tr>
-  <tr><td class="yr">2008–09</td><td>Rezeptionist — Hotel AQA Jacaranda (4★)</td></tr>
+<h2>Lehrerfahrung</h2>
+<p class="exp-lead"><strong>+48 Deutschkurse</strong> dokumentiert (2003–2026), nach Format / Niveau:</p>
+<div class="fmts-wrap">
+<table class="fmts">
+  <tr><td class="n">14</td><td class="lbl">Deutsch A1</td></tr>
+  <tr><td class="n">10</td><td class="lbl">Deutsch A1+A2</td></tr>
+  <tr><td class="n">7</td><td class="lbl">Deutsch A2</td></tr>
+  <tr><td class="n">2</td><td class="lbl">Deutsch B1</td></tr>
 </table>
+<table class="fmts">
+  <tr><td class="n">1</td><td class="lbl">Deutsch C1</td></tr>
+  <tr><td class="n">9</td><td class="lbl">Sektoral (Hotellerie, Rezeption, Housekeeping, Tourismus, Publikumsverkehr)</td></tr>
+  <tr><td class="n">5</td><td class="lbl">Weitere (ESO / ohne explizites CEFR)</td></tr>
+</table>
+</div>
+<div class="subh">Akademien und Träger</div>
+<p class="academies">Aforeca · TecnoInte · Formacionline · Viernes Formación · Focan · AudioStudio · AsHotel · CIP · Creativa Jama · Fyrescan · Generación21 · Forem Canarias · IcadePRO · PFAE · Col.&nbsp;Internacional Costa Adeje · in-company (z.&nbsp;B. Hotel Las Siesta)</p>
 
 <h2>SCE-Akkreditierungen</h2>
 <div class="akk">

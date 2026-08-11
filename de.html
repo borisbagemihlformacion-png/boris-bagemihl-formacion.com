@@ -32,20 +32,16 @@ nav ul{list-style:none;display:flex;gap:28px}
 nav ul li a{color:rgba(255,255,255,.85);text-decoration:none;font-size:.9em;font-weight:500;transition:color .2s}
 nav ul li a:hover{color:var(--acento)}
 .menu-toggle{display:none;cursor:pointer;color:#fff;font-size:1.5em}
-.hero{position:relative;min-height:calc(100vh - 0px);padding:0;overflow:hidden;background:var(--azul);color:#fff}
-.hero-bg{position:absolute;inset:0;background:url(fotoBB.jpg) 68% center / cover no-repeat;transform:scale(1.02)}
-.hero-scrim{position:absolute;inset:0;background:linear-gradient(105deg,rgba(44,62,80,.97) 0%,rgba(44,62,80,.88) 42%,rgba(44,62,80,.45) 72%,rgba(44,62,80,.2) 100%)}
-.hero-inner{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:120px 24px 72px;display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;min-height:100vh}
+.hero{background:var(--azul);color:#fff;padding:0}
+.hero-inner{max-width:1100px;margin:0 auto;padding:110px 24px 64px}
 .hero-brand{font-family:var(--font-display);font-size:clamp(2.4em,5vw,3.4em);font-weight:700;line-height:1.05;color:#fff;margin-bottom:14px;letter-spacing:-.02em}
 .hero-brand em{font-style:normal;color:var(--acento)}
-.hero h1{font-family:var(--font-display);font-size:clamp(1.35em,2.6vw,1.85em);font-weight:500;line-height:1.25;color:rgba(255,255,255,.95);margin-bottom:16px;max-width:18ch}
-.hero .subtitulo{font-size:1.12em;max-width:34em;margin:0 0 22px;font-weight:400;color:rgba(255,255,255,.96);line-height:1.55}
+.hero h1{font-family:var(--font-display);font-size:clamp(1.35em,2.6vw,1.85em);font-weight:500;line-height:1.25;color:rgba(255,255,255,.95);margin-bottom:16px;max-width:22ch}
+.hero .subtitulo{font-size:1.12em;max-width:36em;margin:0 0 22px;font-weight:400;color:rgba(255,255,255,.96);line-height:1.55}
 .hero .subtitulo a{color:var(--acento);font-weight:600}
-.hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:28px;font-size:.95em;font-weight:700;color:#ffffff;letter-spacing:.02em;text-shadow:0 1px 2px rgba(0,0,0,.25)}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:28px;font-size:.95em;font-weight:700;color:#ffffff;letter-spacing:.02em}
 .hero-meta span{position:relative;padding-left:0}
 .hero-meta span+span::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--acento);margin-right:18px;vertical-align:middle;transform:translateY(-1px)}
-.hero-portrait{justify-self:end;width:min(100%,340px)}
-.hero-portrait img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;box-shadow:0 18px 50px rgba(0,0,0,.35);border:3px solid rgba(230,126,34,.55);display:block}
 .btn{display:inline-block;background:#d35400;color:#fff;padding:14px 34px;border-radius:4px;text-decoration:none;font-weight:700;font-size:1.05em;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 14px rgba(211,84,0,.4);border:1px solid rgba(255,255,255,.15)}
 .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(230,126,34,.45)}
 section{padding:70px 20px}section:nth-child(even){background:var(--gris-fondo)}
@@ -87,10 +83,7 @@ h2{font-family:var(--font-display);font-size:2em;color:var(--azul);margin-bottom
 footer{background:var(--azul);color:rgba(255,255,255,.7);text-align:center;padding:24px 20px;font-size:.85em}
 footer a{color:var(--acento);text-decoration:none}
 @media(max-width:860px){
-.hero-inner{grid-template-columns:1fr;padding:100px 20px 56px;min-height:auto}
-.hero-portrait{justify-self:start;width:min(72%,260px);order:-1}
-.hero-scrim{background:linear-gradient(180deg,rgba(44,62,80,.55) 0%,rgba(44,62,80,.92) 38%,rgba(44,62,80,.97) 100%)}
-.hero-bg{background-position:center top}
+.hero-inner{padding:96px 20px 52px}
 }
 @media(max-width:768px){
 nav ul{display:none}nav ul.active{display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:var(--azul);padding:20px;gap:16px}
@@ -98,8 +91,9 @@ nav ul{display:none}nav ul.active{display:flex;flex-direction:column;position:ab
 h2{font-size:1.6em}section{padding:50px 16px}}
 
 .product-band{padding:56px 20px;background:var(--gris-fondo)}
-.product-band .wrap{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
-.product-band img{width:100%;border-radius:4px;box-shadow:0 12px 36px rgba(44,62,80,.18);display:block;border:1px solid rgba(44,62,80,.08)}
+.product-band .wrap{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.product-band .product-visual{text-align:center}
+.product-band img{width:auto;max-width:min(100%,320px);height:auto;aspect-ratio:1400/933;object-fit:contain;border-radius:4px;box-shadow:0 10px 28px rgba(44,62,80,.16);display:inline-block;border:1px solid rgba(44,62,80,.08);vertical-align:middle}
 .product-band h2{text-align:left;margin-bottom:10px}
 .product-band p{color:#555;margin-bottom:10px}
 .faq-more{margin-top:8px}
@@ -128,19 +122,12 @@ h2{font-size:1.6em}section{padding:50px 16px}}
 </nav>
 
 <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-scrim" aria-hidden="true"></div>
     <div class="hero-inner">
-        <div class="hero-copy">
-            <p class="hero-brand">Boris <em>Bagemihl</em></p>
-            <h1>Professionelles Deutsch für Unternehmen auf Teneriffa</h1>
-            <p class="subtitulo">Maßgeschneiderte Präsenzschulungen vor Ort, inklusive FUNDAE-Verwaltung. Muttersprachlicher Lehrer mit über 20 Jahren Erfahrung.</p>
-            <p class="hero-meta"><span>Muttersprachler</span><span>+20 Jahre</span><span>FUNDAE-Förderung</span></p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7DYu520B5X5SmaboLQmlQ2gLEm3yK7HS2f5eCDjcTuh0CYg/viewform" class="btn" target="_blank" rel="noopener">Informationen anfordern</a>
-        </div>
-        <div class="hero-portrait">
-            <img src="fotoBB.jpg" alt="Boris Bagemihl, professioneller Deutschlehrer">
-        </div>
+        <p class="hero-brand">Boris <em>Bagemihl</em></p>
+        <h1>Professionelles Deutsch für Unternehmen auf Teneriffa</h1>
+        <p class="subtitulo">Maßgeschneiderte Präsenzschulungen vor Ort, inklusive FUNDAE-Verwaltung. Muttersprachlicher Lehrer mit über 20 Jahren Erfahrung.</p>
+        <p class="hero-meta"><span>Muttersprachler</span><span>+20 Jahre</span><span>FUNDAE-Förderung</span></p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7DYu520B5X5SmaboLQmlQ2gLEm3yK7HS2f5eCDjcTuh0CYg/viewform" class="btn" target="_blank" rel="noopener">Informationen anfordern</a>
     </div>
 </section>
 
@@ -217,7 +204,9 @@ h2{font-size:1.6em}section{padding:50px 16px}}
     <p>Fachwortschatz, Aussprache und Praxis — zum Nachschlagen am Arbeitsplatz.</p>
   </div>
   <div>
-    <img src="producto-guia-bolsillo.jpg" alt="Taschenführer Deutsch für die Rezeption, In-company-Schulungsmaterial" width="1400" height="1050" loading="lazy">
+    <div class="product-visual">
+    <img src="producto-guia-bolsillo.jpg" alt="Taschenführer Deutsch für die Rezeption, In-company-Schulungsmaterial" width="1400" height="933" loading="lazy">
+    </div>
   </div>
 </div>
 </section>
