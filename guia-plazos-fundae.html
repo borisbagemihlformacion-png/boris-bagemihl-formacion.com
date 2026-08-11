@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Guía de Plazos FUNDAE — Paso a paso</title>
+<style>
+@page { size: A4; margin: 14mm 16mm 14mm 16mm; }
+body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 9.5pt; color: #222; line-height: 1.5; margin: 0; }
+h1 { text-align: center; font-size: 15pt; color: #1a3a5c; margin: 0 0 2mm 0; }
+.subtitle { text-align: center; font-size: 10pt; color: #666; margin-bottom: 6mm; }
+h2 { font-size: 11pt; color: #1a3a5c; border-bottom: 1.5px solid #1a3a5c; padding-bottom: 1mm; margin: 6mm 0 3mm 0; page-break-after: avoid; }
+table { width: 100%; border-collapse: collapse; }
+p { margin: 1.5mm 0; }
+
+.resumen-table { margin: 3mm 0; font-size: 8.5pt; page-break-inside: avoid; }
+.resumen-table th { background: #1a3a5c; color: white; padding: 2mm 3mm; text-align: left; font-size: 8pt; }
+.resumen-table td { padding: 2mm 3mm; border-bottom: 0.5px solid #ddd; }
+.resumen-table .plazo { font-weight: 700; color: #c62828; }
+.resumen-table .tipo { font-size: 7.5pt; color: #888; }
+.resumen-table .minmax { font-size: 7pt; color: #555; font-style: italic; }
+
+/* Steps as simple table rows */
+.steps-table { margin: 2mm 0; font-size: 9pt; }
+.steps-table td { padding: 3mm 3mm; border-bottom: 0.5px solid #e0e0e0; vertical-align: top; }
+.steps-table .num { width: 28px; text-align: center; font-weight: 700; color: #fff; font-size: 10pt; }
+.steps-table .num span { display: inline-block; width: 24px; height: 24px; line-height: 24px; border-radius: 50%; background: #1a3a5c; }
+.steps-table .num-green span { background: #2e7d32; }
+.steps-table .num-gold span { background: #d4a017; color: #1a3a5c; }
+.steps-table .titulo { font-weight: 700; color: #1a3a5c; font-size: 9.5pt; }
+.steps-table .cuando { display: inline-block; background: #ffebee; color: #c62828; padding: 0 6px; border-radius: 8px; font-size: 7.5pt; font-weight: 600; margin-left: 4px; }
+.steps-table .cuando-ok { background: #e8f5e9; color: #2e7d32; }
+.steps-table .detalle { font-size: 8.5pt; color: #444; margin-top: 1mm; }
+.steps-table .quien { font-size: 7.5pt; color: #888; margin-top: 0.5mm; }
+
+.box-green { background: #e8f5e9; border-left: 4px solid #2e7d32; border-radius: 4px; padding: 8px 12px; margin: 3mm 0; font-size: 9pt; page-break-inside: avoid; }
+.box-blue { background: #e3edf7; border-left: 4px solid #1a3a5c; border-radius: 4px; padding: 8px 12px; margin: 3mm 0; font-size: 9pt; page-break-inside: avoid; }
+.box-red { background: #ffebee; border-left: 4px solid #c62828; border-radius: 4px; padding: 8px 12px; margin: 3mm 0; font-size: 9pt; page-break-inside: avoid; }
+
+.ejemplo { background: #fff8e1; border: 1px solid #ffe082; border-radius: 6px; padding: 10px 12px; margin: 3mm 0; page-break-inside: avoid; }
+.ejemplo-title { font-weight: 700; color: #e65100; margin-bottom: 2mm; font-size: 9.5pt; }
+.ej-table td { padding: 1mm 3mm; font-size: 8.5pt; }
+.ej-table td:first-child { font-weight: 600; color: #1a3a5c; white-space: nowrap; width: 90px; }
+
+.footer { text-align: center; margin-top: 5mm; font-size: 8pt; color: #888; border-top: 1px solid #ccc; padding-top: 2mm; }
+.footer a { color: #2a6496; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<h1>Guía de Plazos FUNDAE — Paso a paso</h1>
+<p class="subtitle">Calendario completo de la formación programada por la empresa — Boris Bagemihl</p>
+
+<h2>Resumen de plazos</h2>
+
+<table class="resumen-table">
+<tr><th>Paso</th><th>Acción</th><th>Plazo</th><th>Tipo</th><th>Responsable</th></tr>
+<tr><td>1</td><td>Consulta inicial + acuerdo</td><td>Sin plazo fijo</td><td></td><td>Boris + Empresa</td></tr>
+<tr><td>2</td><td>Informar al RLT</td><td class="plazo">≥ 15 días nat. ANTES del inicio</td><td class="minmax">mínimo</td><td>Empresa (RRHH)</td></tr>
+<tr><td>3</td><td>Comunicar inicio a FUNDAE</td><td class="plazo">≥ 7 días nat. ANTES del inicio</td><td class="minmax">mínimo</td><td>Boris</td></tr>
+<tr><td>4</td><td>Firma acuerdo de formación</td><td class="plazo">ANTES del inicio</td><td class="minmax">obligatorio</td><td>Boris + Empresa</td></tr>
+<tr><td>5</td><td>Impartición del curso</td><td>Según calendario acordado</td><td></td><td>Boris</td></tr>
+<tr><td>6</td><td>Comunicar finalización a FUNDAE</td><td class="plazo">≤ 30 días nat. DESPUÉS del fin</td><td class="minmax">máximo</td><td>Boris</td></tr>
+<tr><td>7</td><td>Aplicar bonificación en TC1</td><td class="plazo">Mes siguiente a la finalización</td><td class="minmax">plazo TC1</td><td>Empresa (gestoría)</td></tr>
+<tr><td>8</td><td>Conservar documentación</td><td class="plazo">≥ 4 años desde la finalización</td><td class="minmax">mínimo</td><td>Boris + Empresa</td></tr>
+</table>
+
+<div class="box-red">
+<strong>Importante:</strong> Todos los plazos son en <strong>días naturales</strong> (incluyen fines de semana y festivos), excepto subsanación de FUNDAE (10 días hábiles). El incumplimiento supone <strong>pérdida de la bonificación</strong>. Los símbolos ≥ (mínimo) y ≤ (máximo) indican el límite legal.
+</div>
+
+<h2>Proceso detallado</h2>
+
+<table class="steps-table">
+<tr>
+<td class="num"><span>1</span></td>
+<td><span class="titulo">Consulta inicial y planificación</span> <span class="cuando cuando-ok">sin plazo fijo</span>
+<div class="detalle">La empresa contacta conmigo. Recojo datos básicos: número de empleados, participantes, sector, horarios. Calculo el crédito FUNDAE disponible y presento propuesta con desglose de costes y bonificación.</div>
+<div class="quien">Responsable: Boris + Empresa</div></td>
+</tr>
+<tr>
+<td class="num"><span>2</span></td>
+<td><span class="titulo">Informar al RLT</span> <span class="cuando">mínimo 15 días nat. ANTES</span>
+<div class="detalle">Si la empresa tiene comité de empresa o delegados sindicales, debe informarles. No es un permiso, es comunicación informativa. Si <strong>no tiene RLT</strong> (mayoría de &lt;50 empl.), se marca "No existe RLT" en FUNDAE y se omite este paso.</div>
+<div class="quien">Responsable: Empresa (RRHH) · Boris asesora</div></td>
+</tr>
+<tr>
+<td class="num"><span>3</span></td>
+<td><span class="titulo">Comunicar inicio a FUNDAE</span> <span class="cuando">mínimo 7 días nat. ANTES</span>
+<div class="detalle">Alta de la acción formativa en plataforma FUNDAE: datos empresa, participantes, fechas, horario, lugar, contenidos, modalidad, formador. Se genera un código de acción formativa.</div>
+<div class="quien">Responsable: Boris</div></td>
+</tr>
+<tr>
+<td class="num"><span>4</span></td>
+<td><span class="titulo">Firma del acuerdo de formación</span> <span class="cuando">obligatorio ANTES del inicio</span>
+<div class="detalle">Empresa y formador firman el acuerdo: datos de ambas partes, contenido, calendario, precio, bonificación, cofinanciación y cláusula LOPD. Obligatorio para inspección.</div>
+<div class="quien">Responsable: Boris + Empresa</div></td>
+</tr>
+<tr>
+<td class="num num-green"><span>5</span></td>
+<td><span class="titulo">Impartición del curso</span> <span class="cuando cuando-ok">según calendario</span>
+<div class="detalle">Sesiones presenciales en la empresa durante jornada laboral. Cada sesión: control asistencia firmado, registro contenidos, registro incidencias. Mínimo 75% asistencia por participante.</div>
+<div class="quien">Responsable: Boris · Empresa facilita espacio y libera personal</div></td>
+</tr>
+<tr>
+<td class="num"><span>6</span></td>
+<td><span class="titulo">Comunicar finalización a FUNDAE</span> <span class="cuando">máximo 30 días nat. DESPUÉS</span>
+<div class="detalle">Comunicación en plataforma FUNDAE con: listado participantes finalizados (≥75% asistencia), evaluación final, cuestionario satisfacción, memoria final, certificados emitidos.</div>
+<div class="quien">Responsable: Boris</div></td>
+</tr>
+<tr>
+<td class="num num-gold"><span>7</span></td>
+<td><span class="titulo">Aplicar bonificación en TC1</span> <span class="cuando">mes siguiente a la finalización</span>
+<div class="detalle">La empresa (o su gestoría) aplica la bonificación en el boletín de cotización TC1. El importe se descuenta de la cuota de Seguridad Social. La empresa recupera el coste.</div>
+<div class="quien">Responsable: Empresa (gestoría) · Boris facilita datos</div></td>
+</tr>
+<tr>
+<td class="num"><span>8</span></td>
+<td><span class="titulo">Conservar documentación</span> <span class="cuando">mínimo 4 años</span>
+<div class="detalle">Empresa y formador conservan: acuerdo firmado, controles asistencia, evaluaciones, certificados, memoria final, facturas, nóminas participantes (para justificar COF salarial).</div>
+<div class="quien">Responsable: Boris + Empresa</div></td>
+</tr>
+</table>
+
+<h2>Ejemplo práctico con fechas reales</h2>
+
+<div class="ejemplo">
+<div class="ejemplo-title">Curso de 8h (4 sesiones) — inicio previsto: lunes 3 de noviembre de 2026</div>
+<table class="ej-table">
+<tr><td>19 oct (dom)</td><td>Límite informar RLT (mínimo 15 días naturales antes)</td></tr>
+<tr><td>27 oct (mar)</td><td>Límite comunicar inicio a FUNDAE (mínimo 7 días naturales antes)</td></tr>
+<tr><td>Antes 3 nov</td><td>Firma del acuerdo de formación</td></tr>
+<tr><td>3 nov (lun)</td><td>Sesión 1 — 2 horas</td></tr>
+<tr><td>5 nov (mié)</td><td>Sesión 2 — 2 horas</td></tr>
+<tr><td>10 nov (lun)</td><td>Sesión 3 — 2 horas</td></tr>
+<tr><td>12 nov (mié)</td><td>Sesión 4 — 2 horas (fin del curso)</td></tr>
+<tr><td>Hasta 12 dic</td><td>Comunicar finalización a FUNDAE (máximo 30 días naturales después)</td></tr>
+<tr><td>Dic 2026</td><td>Empresa aplica bonificación en TC1 de diciembre</td></tr>
+<tr><td>Hasta dic 2030</td><td>Conservar documentación (mínimo 4 años)</td></tr>
+</table>
+</div>
+
+<h2>¿Y si hay cambios durante el curso?</h2>
+
+<table class="resumen-table">
+<tr><th>Tipo de cambio</th><th>Plazo</th><th>Observación</th></tr>
+<tr><td>Cambio de horario o calendario</td><td>Antes de la sesión afectada</td><td>Se puede modificar durante el curso</td></tr>
+<tr><td>Cambio de formador</td><td>Antes de la sesión afectada</td><td>Se puede modificar durante el curso</td></tr>
+<tr><td>Cambio de lugar</td><td>Mín. 1 día natural antes</td><td>Comunicar en plataforma FUNDAE</td></tr>
+<tr><td>Baja de participante</td><td>Antes de la sesión afectada</td><td>Se actualiza en FUNDAE</td></tr>
+<tr><td>Alta de nuevo participante</td><td>Antes de que participe</td><td>Solo si queda plazo en el curso</td></tr>
+<tr><td>Cancelación del curso</td><td>Antes de finalizar</td><td>Comunicar en FUNDAE, no se bonifica</td></tr>
+<tr><td>Subsanación errores FUNDAE</td><td class="plazo">Máx. 10 días hábiles</td><td>Desde notificación de FUNDAE</td></tr>
+</table>
+
+<h2>Resumen visual</h2>
+
+<div class="box-blue" style="text-align:center;font-size:10pt">
+<strong style="font-size:12pt">≥15d</strong> RLT
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<strong style="font-size:12pt">≥7d</strong> FUNDAE
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<strong style="font-size:12pt;color:#2e7d32">CURSO</strong>
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<strong style="font-size:12pt">≤30d</strong> cierre
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<strong style="font-size:12pt">+1 mes</strong> TC1
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<strong style="font-size:12pt">≥4 años</strong> archivo
+</div>
+
+<div class="box-green">
+<strong>Yo me encargo de los pasos 1, 3, 4, 5, 6 y 8.</strong> La empresa solo interviene en el paso 2 (RLT, si aplica) y el paso 7 (bonificación TC1, que hace su gestoría). <strong>Un solo interlocutor para todo el proceso.</strong>
+</div>
+
+<div class="footer">
+<p>Boris Bagemihl · Entidad inscrita en FUNDAE · 633 212 566 · boris.bagemihl.formacion@gmail.com</p>
+<p>Base legal: Ley 30/2015 · RD 694/2017, arts. 10, 15, 18 · <a href="https://boris-bagemihl-formacion.com">boris-bagemihl-formacion.com</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Guía FUNDAE — Formación a coste cero para su empresa</title>
+<style>
+@page { size: A4; margin: 14mm 16mm 14mm 16mm; }
+body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 9.5pt; color: #222; line-height: 1.5; margin: 0; }
+h1 { text-align: center; font-size: 16pt; color: #1a3a5c; margin: 0 0 3mm 0; }
+.subtitle { text-align: center; font-size: 10pt; color: #666; margin-bottom: 6mm; }
+h2 { font-size: 11pt; color: #1a3a5c; border-bottom: 1.5px solid #1a3a5c; padding-bottom: 1mm; margin: 6mm 0 3mm 0; page-break-after: avoid; }
+h3 { page-break-after: avoid; }
+.comp-table, .box-green, .box-blue, .box-gold, .box-red, .steps { page-break-inside: avoid; }
+h3 { font-size: 10pt; color: #2a6496; margin: 4mm 0 2mm 0; }
+
+/* Tabla principal comparativa */
+.comp-table { width: 100%; border-collapse: collapse; margin: 3mm 0; font-size: 8.5pt; }
+.comp-table th { background: #1a3a5c; color: white; padding: 2.5mm 3mm; text-align: center; font-weight: 600; font-size: 8pt; }
+.comp-table th:first-child { text-align: left; }
+.comp-table td { padding: 2mm 3mm; border-bottom: 0.5px solid #ddd; text-align: center; }
+.comp-table td:first-child { text-align: left; font-weight: 500; }
+.comp-table tr:nth-child(even) { background: #f7f9fc; }
+.comp-table .highlight { background: #e8f5e9 !important; }
+.comp-table .zero { color: #2e7d32; font-weight: 700; font-size: 10pt; }
+.comp-table .cost { color: #c62828; font-weight: 600; }
+
+/* Caja resaltada */
+.box-green { background: #e8f5e9; border-left: 4px solid #2e7d32; border-radius: 4px; padding: 10px 14px; margin: 3mm 0; font-size: 9pt; }
+.box-blue { background: #e3edf7; border-left: 4px solid #1a3a5c; border-radius: 4px; padding: 10px 14px; margin: 3mm 0; font-size: 9pt; }
+.box-gold { background: #fff8e1; border-left: 4px solid #d4a017; border-radius: 4px; padding: 10px 14px; margin: 3mm 0; font-size: 9pt; }
+
+/* Fórmulas */
+.formula { background: #f5f5f5; border-radius: 4px; padding: 8px 12px; font-family: 'Courier New', monospace; font-size: 9pt; margin: 2mm 0; }
+
+/* Pasos */
+.steps { counter-reset: step; list-style: none; padding: 0; }
+.steps li { padding: 2mm 0 2mm 28px; position: relative; font-size: 9pt; border-bottom: 0.5px solid #eee; }
+.steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; width: 20px; height: 20px; background: #1a3a5c; color: white; border-radius: 50%; text-align: center; line-height: 20px; font-size: 8pt; font-weight: 700; }
+
+p { margin: 1.5mm 0; }
+strong { color: #1a3a5c; }
+.footer { text-align: center; margin-top: 6mm; font-size: 8pt; color: #888; border-top: 1px solid #ccc; padding-top: 3mm; }
+.footer a { color: #2a6496; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<h1>Formación de alemán a coste cero para su empresa</h1>
+<p class="subtitle">Guía práctica sobre la bonificación FUNDAE y la cofinanciación — Boris Bagemihl</p>
+
+<!-- QUÉ ES -->
+<h2>1. ¿Qué es la formación bonificada FUNDAE?</h2>
+<p>Todas las empresas con trabajadores en Régimen General cotizan mensualmente por formación profesional. Esa cotización genera un <strong>crédito anual</strong> que la empresa puede usar para formar a sus empleados. Si no lo usa antes del 31 de diciembre, <strong>lo pierde</strong>.</p>
+<p>La formación se imparte en la empresa durante la jornada laboral, y después el coste se <strong>recupera mediante bonificación en los seguros sociales</strong> (TC1) del mes siguiente.</p>
+
+<!-- CRÉDITO -->
+<h2>2. ¿Cuánto crédito tiene su empresa?</h2>
+<div class="formula">
+Crédito anual = Cuota FP (0,70% × base cotización × empleados × 12 meses) × % según tamaño
+</div>
+
+<table class="comp-table">
+<tr><th>Tamaño empresa</th><th>% del crédito disponible</th><th>Crédito estimado/año</th></tr>
+<tr><td>1-5 empleados</td><td>100%</td><td>420 – 650 €</td></tr>
+<tr><td>6-9 empleados</td><td>100%</td><td>650 – 1.200 €</td></tr>
+<tr><td>10-49 empleados</td><td>100%</td><td>1.200 – 6.500 €</td></tr>
+<tr><td>50-249 empleados</td><td>75%</td><td>4.900 – 25.000 €</td></tr>
+<tr><td>250+ empleados</td><td>50%</td><td>16.000+ €</td></tr>
+</table>
+<p style="font-size:8pt;color:#888">* Estimación basada en base de cotización media de hostelería (~1.300 €/mes). El importe real depende de la cuota FP de cada empresa.</p>
+
+<div class="box-blue">
+<strong>Acumulación de crédito (Art. 11 RD 694/2017):</strong> Las empresas de <strong>menos de 50 empleados</strong> pueden acumular el crédito no utilizado para los <strong>2 ejercicios siguientes</strong>. Para ello deben solicitarlo en la plataforma FUNDAE <strong>antes del 30 de junio</strong> del año en curso. Si no se solicita la acumulación, el crédito caduca el 31 de diciembre. <em>Recomendación: solicitar siempre la acumulación aunque se prevea usar el crédito en el año — no se pierde nada.</em>
+</div>
+
+<!-- COF -->
+<h2>3. ¿Qué es la cofinanciación (COF)?</h2>
+<p>FUNDAE exige que la empresa aporte un porcentaje del coste de la formación como <strong>cofinanciación privada</strong>. Este porcentaje varía según el tamaño de la empresa:</p>
+
+<table class="comp-table">
+<tr><th>Tamaño</th><th>COF exigida</th><th>Significado</th></tr>
+<tr class="highlight"><td>1-5 empleados</td><td class="zero">0%</td><td>Exenta — bonificación 100%</td></tr>
+<tr><td>6-9 empleados</td><td>5%</td><td>La empresa aporta 5% del coste</td></tr>
+<tr><td>10-49 empleados</td><td>10%</td><td>La empresa aporta 10% del coste</td></tr>
+<tr><td>50-249 empleados</td><td>20%</td><td>La empresa aporta 20% del coste</td></tr>
+<tr><td>250+ empleados</td><td>40%</td><td>La empresa aporta 40% del coste</td></tr>
+</table>
+
+<!-- CLAVE: COF SALARIAL -->
+<h2>4. La clave: los costes salariales cubren la COF</h2>
+
+<div class="box-green">
+<strong>Art. 16 del RD 694/2017:</strong> «Los costes salariales de los trabajadores que reciben formación en la jornada laboral no serán objeto de bonificación, <strong>computándose a efectos de cofinanciación privada</strong>.»
+</div>
+
+<p>Esto significa que el sueldo que la empresa <strong>ya paga</strong> a sus empleados durante las horas de formación <strong>cuenta como su aportación de cofinanciación</strong>. No necesita pagar nada extra.</p>
+
+<h3>¿Cómo se calcula?</h3>
+<div class="formula">
+Coste salarial computable = N.º participantes × horas de formación × coste/hora bruto del trabajador
+</div>
+
+<!-- TABLA COMPARATIVA PRINCIPAL -->
+<h2>5. Tabla comparativa: escenarios por tamaño de empresa</h2>
+<p>Módulo estándar de <strong>8 horas</strong> de alemán profesional, con <strong>salario medio bruto de 12 €/hora</strong>:</p>
+
+<table class="comp-table">
+<tr>
+<th>Escenario</th>
+<th>Empl.</th>
+<th>Part.</th>
+<th>COF</th>
+<th>COF exigida vs coste salarial</th>
+<th>Empresa paga extra</th>
+</tr>
+<tr class="highlight">
+<td>Microempresa</td><td>3</td><td>3</td><td class="zero">0%</td>
+<td>Exenta de COF</td><td class="zero">0 €</td>
+</tr>
+<tr class="highlight">
+<td>Pequeña (1-5)</td><td>5</td><td>4</td><td class="zero">0%</td>
+<td>Exenta de COF</td><td class="zero">0 €</td>
+</tr>
+<tr class="highlight">
+<td>Pequeña (6-9)</td><td>8</td><td>4</td><td>5%</td>
+<td>50 € exigida &lt; 384 € salarial</td><td class="zero">0 €</td>
+</tr>
+<tr class="highlight">
+<td>Mediana (10-49)</td><td>25</td><td>6</td><td>10%</td>
+<td>100 € exigida &lt; 576 € salarial</td><td class="zero">0 €</td>
+</tr>
+<tr class="highlight">
+<td>Mediana-grande</td><td>80</td><td>8</td><td>20%</td>
+<td>200 € exigida &lt; 768 € salarial</td><td class="zero">0 €</td>
+</tr>
+<tr class="highlight">
+<td>Grande</td><td>300</td><td>10</td><td>40%</td>
+<td>400 € exigida &lt; 960 € salarial</td><td class="zero">0 €</td>
+</tr>
+</table>
+
+<div class="box-gold">
+<strong>Conclusión:</strong> En todos los escenarios, el coste salarial de los participantes durante las 8 horas de formación supera sobradamente la cofinanciación exigida. <strong>La empresa no paga nada extra en ningún caso.</strong>
+</div>
+
+<!-- ESCENARIOS CON MÁS HORAS -->
+<h2>6. Escenarios con cursos más largos</h2>
+
+<table class="comp-table">
+<tr><th>Empresa</th><th>Empl.</th><th>Part.</th><th>Horas</th><th>COF %</th><th>COF exigida</th><th>Coste salarial</th><th>Cubierta</th></tr>
+<tr class="highlight"><td>Tasca (8 empl.)</td><td>8</td><td>4</td><td>4h prueba</td><td>5%</td><td>25 €</td><td>192 €</td><td class="zero">Sí</td></tr>
+<tr class="highlight"><td>Tasca (8 empl.)</td><td>8</td><td>8</td><td>8h módulo</td><td>5%</td><td>50 €</td><td>768 €</td><td class="zero">Sí</td></tr>
+<tr class="highlight"><td>Hotel mediano</td><td>60</td><td>6</td><td>40h</td><td>20%</td><td>1.000 €</td><td>2.880 €</td><td class="zero">Sí</td></tr>
+<tr class="highlight"><td>Hotel grande</td><td>300</td><td>10</td><td>80h</td><td>40%</td><td>4.000 €</td><td>9.600 €</td><td class="zero">Sí</td></tr>
+<tr class="highlight"><td>Farmacia (5 empl.)</td><td>5</td><td>3</td><td>8h</td><td>0%</td><td class="zero">0 €</td><td>288 €</td><td class="zero">Exenta</td></tr>
+<tr class="highlight"><td>Inmobiliaria (4 empl.)</td><td>4</td><td>4</td><td>16h</td><td>0%</td><td class="zero">0 €</td><td>768 €</td><td class="zero">Exenta</td></tr>
+</table>
+
+<!-- REQUISITOS -->
+<h2>7. Requisitos para que funcione</h2>
+<ol class="steps">
+<li><strong>Formación real:</strong> Las sesiones se imparten presencialmente con control de asistencia firmado por los participantes.</li>
+<li><strong>Durante la jornada laboral:</strong> La formación debe realizarse dentro del horario de trabajo del empleado (documentado con registro horario).</li>
+<li><strong>Relacionada con la actividad:</strong> El curso de alemán debe guardar relación con la actividad profesional de la empresa (hostelería, comercio, turismo, salud, etc.).</li>
+<li><strong>Documentación conservada 4 años:</strong> Nóminas de participantes, registro horario, contratos laborales y control de asistencia firmado.</li>
+</ol>
+
+<!-- PROCESO -->
+<h2>8. Proceso completo — yo me encargo de todo</h2>
+<ol class="steps">
+<li><strong>Consulta inicial:</strong> La empresa me facilita el número de empleados y participantes. Calculo el crédito disponible y la bonificación.</li>
+<li><strong>Acuerdo de formación:</strong> Firmamos el acuerdo con fechas, horarios, participantes y contenidos.</li>
+<li><strong>Comunicación a FUNDAE:</strong> Doy de alta la acción formativa en la plataforma FUNDAE (mínimo 7 días antes del inicio).</li>
+<li><strong>Impartición:</strong> Sesiones presenciales en la empresa. Control de asistencia firmado cada sesión.</li>
+<li><strong>Evaluación y certificado:</strong> Evaluación final + certificado de aprovechamiento para cada participante.</li>
+<li><strong>Memoria final:</strong> Documento resumen de la acción formativa.</li>
+<li><strong>Bonificación:</strong> La empresa aplica la bonificación en el TC1 del mes siguiente a la finalización. El coste se recupera automáticamente.</li>
+</ol>
+
+<div class="box-blue">
+<strong>La empresa solo tiene que:</strong> facilitar los datos de los participantes, disponer de un espacio para la formación, y liberar a los empleados durante las sesiones. <strong>Yo gestiono todo lo demás.</strong>
+</div>
+
+<!-- CONTACTO -->
+<h2>9. Contacto</h2>
+<p><strong>Boris Bagemihl</strong> — Profesor nativo de alemán · Entidad inscrita en FUNDAE</p>
+<p>Tel./WhatsApp: <strong>633 212 566</strong> · Email: <strong>boris.bagemihl.formacion@gmail.com</strong></p>
+<p>Web: <strong>boris-bagemihl-formacion.com</strong></p>
+<p style="margin-top:3mm"><em>Solicite un cálculo personalizado para su empresa sin compromiso.</em></p>
+
+<div class="footer">
+<p>Boris Bagemihl · Entidad inscrita en FUNDAE · Tenerife, Canarias</p>
+<p>Base legal: Ley 30/2015, art. 9.5 · RD 694/2017, arts. 15, 16 y 17</p>
+<p><a href="https://boris-bagemihl-formacion.com">boris-bagemihl-formacion.com</a></p>
+</div>
+
+</body>
+</html>
