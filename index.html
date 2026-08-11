@@ -39,14 +39,14 @@ nav ul li a:hover{color:var(--acento)}
 .hero-brand{font-family:var(--font-display);font-size:clamp(2.4em,5vw,3.4em);font-weight:700;line-height:1.05;color:#fff;margin-bottom:14px;letter-spacing:-.02em}
 .hero-brand em{font-style:normal;color:var(--acento)}
 .hero h1{font-family:var(--font-display);font-size:clamp(1.35em,2.6vw,1.85em);font-weight:500;line-height:1.25;color:rgba(255,255,255,.95);margin-bottom:16px;max-width:18ch}
-.hero .subtitulo{font-size:1.12em;max-width:34em;margin:0 0 22px;font-weight:400;color:rgba(255,255,255,.88);line-height:1.55}
+.hero .subtitulo{font-size:1.12em;max-width:34em;margin:0 0 22px;font-weight:400;color:rgba(255,255,255,.96);line-height:1.55}
 .hero .subtitulo a{color:var(--acento);font-weight:600}
-.hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:28px;font-size:.95em;font-weight:600;color:rgba(255,255,255,.9);letter-spacing:.02em}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:28px;font-size:.95em;font-weight:700;color:#ffffff;letter-spacing:.02em;text-shadow:0 1px 2px rgba(0,0,0,.25)}
 .hero-meta span{position:relative;padding-left:0}
 .hero-meta span+span::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--acento);margin-right:18px;vertical-align:middle;transform:translateY(-1px)}
 .hero-portrait{justify-self:end;width:min(100%,340px)}
 .hero-portrait img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;box-shadow:0 18px 50px rgba(0,0,0,.35);border:3px solid rgba(230,126,34,.55);display:block}
-.btn{display:inline-block;background:var(--acento);color:#fff;padding:14px 34px;border-radius:4px;text-decoration:none;font-weight:700;font-size:1.05em;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 14px rgba(230,126,34,.35)}
+.btn{display:inline-block;background:#d35400;color:#fff;padding:14px 34px;border-radius:4px;text-decoration:none;font-weight:700;font-size:1.05em;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 14px rgba(211,84,0,.4);border:1px solid rgba(255,255,255,.15)}
 .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(230,126,34,.45)}
 section{padding:70px 20px}section:nth-child(even){background:var(--gris-fondo)}
 .container{max-width:1000px;margin:0 auto}
@@ -96,6 +96,16 @@ footer a{color:var(--acento);text-decoration:none}
 nav ul{display:none}nav ul.active{display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:var(--azul);padding:20px;gap:16px}
 .menu-toggle{display:block}.sobre-mi-grid,.contacto-grid{grid-template-columns:1fr}.ventajas-grid,.modulos-grid{grid-template-columns:1fr}
 h2{font-size:1.6em}section{padding:50px 16px}}
+
+.product-band{padding:56px 20px;background:var(--gris-fondo)}
+.product-band .wrap{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.product-band img{width:100%;border-radius:4px;box-shadow:0 12px 36px rgba(44,62,80,.18);display:block;border:1px solid rgba(44,62,80,.08)}
+.product-band h2{text-align:left;margin-bottom:10px}
+.product-band p{color:#555;margin-bottom:10px}
+.faq-more{margin-top:8px}
+.faq-more>summary{list-style:none;cursor:pointer;font-weight:700;color:var(--acento);padding:12px 0;font-size:1em}
+.faq-more>summary::-webkit-details-marker{display:none}
+@media(max-width:860px){.product-band .wrap{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -107,6 +117,7 @@ h2{font-size:1.6em}section{padding:50px 16px}}
     <ul>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#ventajas">Ventajas</a></li>
+        <li><a href="#material">Material</a></li>
         <li><a href="#fundae">FUNDAE</a></li>
         <li><a href="#modulos">Módulos</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -194,6 +205,20 @@ h2{font-size:1.6em}section{padding:50px 16px}}
             <p>Sin intermediarios, sin comerciales, sin sorpresas. Un solo interlocutor: yo imparto y gestiono FUNDAE.</p>
         </div>
     </div>
+</div>
+</section>
+
+
+<section class="product-band" id="material" aria-label="Material de formación">
+<div class="wrap">
+  <div>
+    <h2>Material a medida</h2>
+    <p class="section-sub" style="text-align:left;margin:0 0 12px;max-width:none">Cada módulo cierra con una <strong>guía de bolsillo</strong> laminada: frases reales del puesto (recepción, restauración, taquillas…), no un libro de academia.</p>
+    <p>Vocabulario sectorial, pronunciación y uso práctico — para que el equipo pueda consultar en el mostrador.</p>
+  </div>
+  <div>
+    <img src="producto-guia-bolsillo.jpg" alt="Guía de bolsillo de alemán para recepción, material de formación in-company" width="1400" height="1050" loading="lazy">
+  </div>
 </div>
 </section>
 
@@ -336,16 +361,16 @@ h2{font-size:1.6em}section{padding:50px 16px}}
         <div class="modulo-card"><h3>Farmacia</h3><p>Síntomas, medicamentos, posología, seguros, consultas frecuentes.</p><span class="tag">Salud</span></div>
         <div class="modulo-card"><h3>Inmobiliaria</h3><p>Visitas, contratos, descripciones, negociación, documentación.</p><span class="tag">Servicios</span></div>
         <div class="modulo-card"><h3>Deportes acuáticos</h3><p>Seguridad, equipamiento, instrucciones, condiciones, reservas.</p><span class="tag">Ocio</span></div>
-        <div class="modulo-card"><h3>Comercio y tiendas</h3><p>Atención al cliente, tallas, precios, devoluciones, envíos.</p><span class="tag">Comercio</span></div>
-        <div class="modulo-card"><h3>Alquiler vacacional</h3><p>Llegada, normas, incidencias, check-out, reseñas.</p><span class="tag">Servicios</span></div>
-        <div class="modulo-card"><h3>Sociosanitario</h3><p>Residencias, clínicas, fisioterapia. Comunicación con pacientes alemanes.</p><span class="tag">Salud</span></div>
     </div>
     <div style="text-align:center;margin-top:28px">
         <p style="color:#888;font-size:.92em;margin-bottom:12px">Diseño módulos a medida según las necesidades de cada empresa.</p>
-        <button onclick="document.getElementById('modulos-extra').style.display=document.getElementById('modulos-extra').style.display==='none'?'block':'none'" style="background:var(--azul-claro);color:#fff;border:none;padding:10px 24px;border-radius:6px;font-size:.95em;font-weight:600;cursor:pointer;transition:background .2s">+22 módulos adicionales disponibles</button>
+        <button onclick="document.getElementById('modulos-extra').style.display=document.getElementById('modulos-extra').style.display==='none'?'block':'none'" style="background:var(--acento);color:#fff;border:none;padding:10px 24px;border-radius:4px;font-size:.95em;font-weight:600;cursor:pointer">+25 módulos adicionales</button>
     </div>
     <div id="modulos-extra" style="display:none;margin-top:24px">
         <div class="modulos-grid">
+            <div class="modulo-card"><h3>Comercio y tiendas</h3><p>Atención al cliente, tallas, precios, devoluciones, envíos.</p><span class="tag">Comercio</span></div>
+            <div class="modulo-card"><h3>Alquiler vacacional</h3><p>Llegada, normas, incidencias, check-out, reseñas.</p><span class="tag">Servicios</span></div>
+            <div class="modulo-card"><h3>Sociosanitario</h3><p>Residencias, clínicas, fisioterapia. Comunicación con pacientes alemanes.</p><span class="tag">Salud</span></div>
             <div class="modulo-card"><h3>Animación y actividades</h3><p>Programas, instrucciones, quejas, clima, despedida.</p><span class="tag">Hotelero</span></div>
             <div class="modulo-card"><h3>Departamento de pisos</h3><p>Comunicación con huéspedes, productos, incidencias, horarios.</p><span class="tag">Hotelero</span></div>
             <div class="modulo-card"><h3>Cocina</h3><p>Alérgenos, ingredientes, menús especiales, proveedores.</p><span class="tag">Hotelero</span></div>
@@ -395,24 +420,27 @@ h2{font-size:1.6em}section{padding:50px 16px}}
             <p style="margin-top:10px;font-size:.95em">Sí, la formación bonificada FUNDAE se imparte dentro de la jornada laboral. El horario se acuerda con la empresa para minimizar el impacto en la operativa diaria.</p>
         </details>
         <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
-            <summary style="font-weight:600;color:var(--azul)">¿Qué documentación necesita la empresa?</summary>
-            <p style="margin-top:10px;font-size:.95em">Solo los datos básicos de los participantes (nombre, DNI, categoría profesional, grupo de cotización). Yo me encargo de toda la documentación FUNDAE: acuerdo de formación, control de asistencia, memoria final y gestión de la bonificación.</p>
-        </details>
-        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
             <summary style="font-weight:600;color:var(--azul)">¿Mi empresa tiene crédito FUNDAE disponible?</summary>
-            <p style="margin-top:10px;font-size:.95em">Sí, todas las empresas que cotizan por formación profesional tienen crédito. El importe depende del número de empleados y la cuota de FP. Use la calculadora de esta página para ver una estimación, o consúlteme para un cálculo exacto.</p>
+            <p style="margin-top:10px;font-size:.95em">Sí, todas las empresas que cotizan por formación profesional tienen crédito. Use la calculadora de esta página o consúlteme para un cálculo exacto.</p>
         </details>
-        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
-            <summary style="font-weight:600;color:var(--azul)">¿Puedo hacer una sesión de prueba antes de contratar un curso completo?</summary>
-            <p style="margin-top:10px;font-size:.95em">Sí. Ofrezco un módulo de 4 horas (2 sesiones) como sesión de prueba. Así la empresa puede valorar la formación antes de comprometerse con un curso más largo.</p>
-        </details>
-        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
-            <summary style="font-weight:600;color:var(--azul)">¿Qué pasa si un empleado falta a una sesión?</summary>
-            <p style="margin-top:10px;font-size:.95em">Se registra la ausencia en el control de asistencia. FUNDAE exige un mínimo del 75% de asistencia para que el participante compute como finalizado. Las ausencias justificadas se documentan.</p>
-        </details>
-        <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
-            <summary style="font-weight:600;color:var(--azul)">¿También imparte inglés?</summary>
-            <p style="margin-top:10px;font-size:.95em">Sí, ofrezco formación de inglés profesional con el mismo sistema bonificable. Consulte disponibilidad.</p>
+        <details class="faq-more">
+            <summary>Más preguntas frecuentes</summary>
+            <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin:8px 0;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+                <summary style="font-weight:600;color:var(--azul)">¿Qué documentación necesita la empresa?</summary>
+                <p style="margin-top:10px;font-size:.95em">Solo los datos básicos de los participantes (nombre, DNI, categoría profesional, grupo de cotización). Yo me encargo de toda la documentación FUNDAE.</p>
+            </details>
+            <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+                <summary style="font-weight:600;color:var(--azul)">¿Puedo hacer una sesión de prueba?</summary>
+                <p style="margin-top:10px;font-size:.95em">Sí. Ofrezco un módulo de 4 horas (2 sesiones) como sesión de prueba antes de un curso más largo.</p>
+            </details>
+            <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+                <summary style="font-weight:600;color:var(--azul)">¿Qué pasa si un empleado falta a una sesión?</summary>
+                <p style="margin-top:10px;font-size:.95em">Se registra la ausencia. FUNDAE exige un mínimo del 75% de asistencia para computar como finalizado.</p>
+            </details>
+            <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+                <summary style="font-weight:600;color:var(--azul)">¿También imparte inglés?</summary>
+                <p style="margin-top:10px;font-size:.95em">Sí, con el mismo sistema bonificable. Consulte disponibilidad.</p>
+            </details>
         </details>
     </div>
 </div>
