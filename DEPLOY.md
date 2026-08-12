@@ -27,7 +27,7 @@
 |---------|---------|
 | `index.html` | Web ES (hero nuevo) |
 | `de.html` | Web DE |
-| `fotoBB.jpg` | Foto hero / perfil |
+| `fotoBB.jpg` | Foto perfil («Sobre mí»; hero ya sin foto) |
 | `og-image.jpg` | Open Graph |
 | `cv-boris-bagemihl.pdf` / `.html` | **Perfil comercial 1p ES** |
 | `cv-completo-boris-bagemihl.pdf` / `.html` | CV largo SCE/FPE ES |
