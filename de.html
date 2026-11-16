@@ -100,7 +100,15 @@ h2{font-size:1.6em}section{padding:50px 16px}}
 .faq-more{margin-top:8px}
 .faq-more>summary{list-style:none;cursor:pointer;font-weight:700;color:var(--acento);padding:12px 0;font-size:1em}
 .faq-more>summary::-webkit-details-marker{display:none}
-@media(max-width:860px){.product-band .wrap{grid-template-columns:1fr}}
+.tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:800px;margin:0 auto 28px}
+.tip-card{background:var(--blanco);border-radius:var(--radius);box-shadow:0 1px 6px rgba(0,0,0,.06);border:1px solid rgba(44,62,80,.08);overflow:hidden}
+.tip-card>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;color:var(--azul);font-size:.95em;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tip-card>summary::-webkit-details-marker{display:none}
+.tip-card>summary::after{content:"+";color:var(--acento);font-size:1.2em;font-weight:700;line-height:1}
+.tip-card[open]>summary::after{content:"–"}
+.tip-card .tip-body{padding:0 16px 14px;font-size:.9em;color:#555;border-top:1px solid #eee}
+.tip-card .tip-body p{margin:10px 0 0}
+@media(max-width:860px){.product-band .wrap{grid-template-columns:1fr}.tips-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -216,6 +224,21 @@ h2{font-size:1.6em}section{padding:50px 16px}}
 <div class="container">
     <h2>Geförderte Weiterbildung <a href="https://www.fundae.es" target="_blank" style="color:var(--azul);text-decoration:none;">FUNDAE</a></h2>
     <p class="section-sub">Ihr Unternehmen zahlt bereits monatlich für Weiterbildung. Wenn Sie es nicht nutzen, verfällt es.</p>
+
+    <div id="fundae-tips" style="scroll-margin-top:80px">
+    <p style="text-align:center;font-size:.95em;color:#666;margin:0 auto 14px;max-width:640px">Kurzinfos · tippen für <strong>+ Info</strong></p>
+    <div class="tips-grid">
+        <details class="tip-card"><summary>Nettokosten 0 € mit Guthaben</summary><div class="tip-body"><p>Bei ausreichendem FUNDAE-Guthaben für Stunden und Teilnehmerzahl können die Nettokosten <strong>0 €</strong> betragen. Keine verlorene Zahlung: Erstattung über die Sozialversicherungsbeiträge. Ich übernehme die Verwaltung.</p></div></details>
+        <details class="tip-card"><summary>1–5 Mitarbeitende: 0 % Kofinanzierung</summary><div class="tip-body"><p>Bei 1–5 Beschäftigten beträgt die geforderte private Kofinanzierung <strong>0 %</strong>. Oft gibt es ein Mindestguthaben von ca. <strong>420 €</strong> pro Jahr.</p></div></details>
+        <details class="tip-card"><summary>Gemeinsame Gruppe (Agrupación)</summary><div class="tip-body"><p>Bei wenigen Teilnehmern ist ein <strong>gemeinsamer Kurs</strong> mit anderen Unternehmen derselben Branche möglich (≥3 CIF). Jedes Unternehmen nutzt <strong>sein eigenes Guthaben</strong>.</p></div></details>
+        <details class="tip-card"><summary>Kofinanzierung = Gehälter</summary><div class="tip-body"><p>Ab mehr als fünf Beschäftigten zählt das <strong>Gehalt der Teilnehmenden während der Arbeitszeit</strong> als Kofinanzierung (Art. 16 RD 694/2017) — ohne Extraausgabe.</p></div></details>
+        <details class="tip-card"><summary>Nutzen oder Verfall</summary><div class="tip-body"><p>Das Guthaben ist <strong>jährlich</strong>. Unter 50 Beschäftigte können ungenutztes Guthaben bis zu 2 Jahre <strong>ansammeln</strong>, wenn sie es rechtzeitig bei FUNDAE beantragen (vor dem 30. Juni).</p></div></details>
+        <details class="tip-card"><summary>Komplette Verwaltung</summary><div class="tip-body"><p>Ich übernehme Anmeldung, Meldungen und Unterricht. Das Unternehmen entscheidet nur Teilnehmende und Zeiten; die Bonifizierung läuft über die Sozialversicherung im Folgemonat.</p></div></details>
+        <details class="tip-card"><summary>Anpassung an echtes Guthaben</summary><div class="tip-body"><p>Stunden und Teilnehmerzahl werden so geplant, dass das Modul in das verfügbare Guthaben <strong>passt</strong>.</p></div></details>
+        <details class="tip-card"><summary>Selbstständig ohne Angestellte?</summary><div class="tip-body"><p>Dieses Guthaben gilt für Unternehmen mit Beschäftigten im Régimen General — nicht für Solo-Selbstständige. Andere Wege (privat / subventioniert) auf Anfrage.</p></div></details>
+    </div>
+    </div>
+
     <div style="background:var(--blanco);border-radius:var(--radius);padding:36px;box-shadow:0 2px 12px rgba(0,0,0,.06);max-width:800px;margin:0 auto">
         <h3 style="color:var(--azul);margin-bottom:16px;font-size:1.2em">Was ist FUNDAE</h3>
         <p>Alle Unternehmen mit Arbeitnehmern im Régimen General zahlen monatlich für berufliche Weiterbildung. Dieses Geld wird zu einem <strong>jährlichen Guthaben</strong>, das für die Schulung der Mitarbeiter verwendet werden kann. Wird es nicht vor dem 31. Dezember genutzt, <strong>verfällt es</strong>. Mehr Informationen auf <a href="https://www.fundae.es" target="_blank" style="color:var(--azul-claro)">fundae.es</a>.</p>

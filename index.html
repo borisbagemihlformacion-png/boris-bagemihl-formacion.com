@@ -100,7 +100,15 @@ h2{font-size:1.6em}section{padding:50px 16px}}
 .faq-more{margin-top:8px}
 .faq-more>summary{list-style:none;cursor:pointer;font-weight:700;color:var(--acento);padding:12px 0;font-size:1em}
 .faq-more>summary::-webkit-details-marker{display:none}
-@media(max-width:860px){.product-band .wrap{grid-template-columns:1fr}}
+.tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:800px;margin:0 auto 28px}
+.tip-card{background:var(--blanco);border-radius:var(--radius);box-shadow:0 1px 6px rgba(0,0,0,.06);border:1px solid rgba(44,62,80,.08);overflow:hidden}
+.tip-card>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;color:var(--azul);font-size:.95em;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tip-card>summary::-webkit-details-marker{display:none}
+.tip-card>summary::after{content:"+";color:var(--acento);font-size:1.2em;font-weight:700;line-height:1}
+.tip-card[open]>summary::after{content:"–"}
+.tip-card .tip-body{padding:0 16px 14px;font-size:.9em;color:#555;border-top:1px solid #eee}
+.tip-card .tip-body p{margin:10px 0 0}
+@media(max-width:860px){.product-band .wrap{grid-template-columns:1fr}.tips-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -216,6 +224,45 @@ h2{font-size:1.6em}section{padding:50px 16px}}
 <div class="container">
     <h2>Formación bonificada <a href="https://www.fundae.es" target="_blank" style="color:var(--azul);text-decoration:none;">FUNDAE</a></h2>
     <p class="section-sub">Su empresa ya paga por formación cada mes. Si no la usa, la pierde.</p>
+
+    <div id="fundae-tips" style="scroll-margin-top:80px">
+    <p style="text-align:center;font-size:.95em;color:#666;margin:0 auto 14px;max-width:640px">Mini-claves · pulse cada una para <strong>+ info</strong></p>
+    <div class="tips-grid">
+        <details class="tip-card">
+            <summary>Coste 0 € con crédito</summary>
+            <div class="tip-body"><p>Con crédito FUNDAE suficiente para las horas y el número de alumnos, el coste neto puede quedar a <strong>0 €</strong>. Usted no paga a fondo perdido: recupera el importe en las cotizaciones a la Seguridad Social. Yo gestiono la bonificación.</p></div>
+        </details>
+        <details class="tip-card">
+            <summary>Micros 1–5: COF 0 %</summary>
+            <div class="tip-body"><p>Con plantilla de 1 a 5 trabajadores, la cofinanciación privada exigida es <strong>0 %</strong>. Suele existir un crédito mínimo del orden de <strong>420 €</strong> al año: ideal para un módulo práctico de alemán en mostrador.</p></div>
+        </details>
+        <details class="tip-card">
+            <summary>Grupo compartido (agrupación)</summary>
+            <div class="tip-body"><p>Si son pocos alumnos, se puede hacer un <strong>curso conjunto</strong> con otras empresas del mismo sector (≥3 CIF). Cada empresa usa <strong>su propio crédito</strong>; yo coordino el grupo y la gestión FUNDAE.</p></div>
+        </details>
+        <details class="tip-card">
+            <summary>COF = sueldos en jornada</summary>
+            <div class="tip-body"><p>Si la empresa tiene más de cinco trabajadores y FUNDAE pide cofinanciación, esa parte se cubre con el <strong>sueldo de los participantes durante la formación en horario laboral</strong> (Art. 16 RD 694/2017). No es un desembolso extra aparte.</p></div>
+        </details>
+        <details class="tip-card">
+            <summary>Úselo o se pierde</summary>
+            <div class="tip-body"><p>El crédito es <strong>anual</strong>. Si no se usa, caduca. Las empresas de menos de 50 empleados pueden <strong>acumular</strong> el no usado hasta 2 años si lo solicitan a tiempo en la plataforma FUNDAE (antes del 30 de junio del año en curso).</p></div>
+        </details>
+        <details class="tip-card">
+            <summary>Gestión completa incluida</summary>
+            <div class="tip-body"><p>Me encargo de alta, comunicación e impartición ante FUNDAE. La empresa decide quién participa y el horario; la gestoría aplica la bonificación en el TC1 del mes siguiente a la finalización.</p></div>
+        </details>
+        <details class="tip-card">
+            <summary>Ajuste al crédito real</summary>
+            <div class="tip-body"><p>Diseñamos horas y número de alumnos para que el módulo <strong>quepa en el crédito</strong> disponible. Así se evita un coste a fondo perdido y se maximiza el ahorro.</p></div>
+        </details>
+        <details class="tip-card">
+            <summary>¿Autónomo sin empleados?</summary>
+            <div class="tip-body"><p>El crédito de formación programada es de <strong>empresa con trabajadores en Régimen General</strong>. Un autónomo solo, sin empleados en ese régimen, no puede bonificarse a sí mismo por esta vía. Hay otras opciones (privada o formación subvencionada cuando hay convocatoria).</p></div>
+        </details>
+    </div>
+    </div>
+
     <div class="fundae-box">
         <h3>Qué es FUNDAE</h3>
         <p>Todas las empresas con trabajadores en Régimen General cotizan por formación profesional. Ese dinero se convierte en un <strong>crédito anual</strong> que pueden usar para formar a sus empleados. Si no lo usan antes del 31 de diciembre, <strong>lo pierden</strong>. Más información en <a href="https://www.fundae.es/formacion_para_el_empleo/formacion-programada" target="_blank" style="color:var(--azul-claro)">fundae.es</a>.</p>
@@ -430,6 +477,14 @@ h2{font-size:1.6em}section{padding:50px 16px}}
             <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
                 <summary style="font-weight:600;color:var(--azul)">¿También imparte inglés?</summary>
                 <p style="margin-top:10px;font-size:.95em">Sí, con el mismo sistema bonificable. Consulte disponibilidad.</p>
+            </details>
+            <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+                <summary style="font-weight:600;color:var(--azul)">Somos pocos: ¿podemos agruparnos con otras empresas?</summary>
+                <p style="margin-top:10px;font-size:.95em">Sí. Con al menos tres empresas del mismo sector se puede organizar un curso compartido. Cada CIF usa su propio crédito FUNDAE; yo coordino el grupo.</p>
+            </details>
+            <details style="background:var(--blanco);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);cursor:pointer">
+                <summary style="font-weight:600;color:var(--azul)">Soy autónomo sin empleados: ¿tengo crédito FUNDAE?</summary>
+                <p style="margin-top:10px;font-size:.95em">No por esta vía. El crédito de formación programada requiere trabajadores en Régimen General. Consúlteme alternativas (formación privada o subvencionada cuando exista convocatoria).</p>
             </details>
         </details>
     </div>
